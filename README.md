@@ -46,7 +46,7 @@ docker compose exec jtl-shop bash
 Logs can be shown using 
 
 ```bash
-docker compose logs jtl-shop bash
+docker compose logs jtl-shop
 ```
 # To Do
 [x] download and unzip shop build automatically
