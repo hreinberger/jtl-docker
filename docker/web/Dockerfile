@@ -11,7 +11,7 @@ RUN printf "\n" | pecl install imagick
 RUN docker-php-ext-install intl bcmath soap opcache pdo_mysql zip \
     && docker-php-ext-enable imagick xdebug
 
-# DOwnload and install selected shop version
+# Download and install selected shop version
 ARG JTL_VERSION
 WORKDIR /var/www/html
 ADD https://build.jtl-shop.de/get/shop-${JTL_VERSION}.zip .

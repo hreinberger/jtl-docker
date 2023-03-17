@@ -13,6 +13,8 @@ services:
             - "80:80"
         depends_on: 
             - "jtl-db"
+        volumes:
+            - jtl_shop:/var/www/html
 
     
     jtl-db:
@@ -46,6 +48,6 @@ services:
 
 volumes: 
     jtl_db:
-
+    jtl_shop:
 
 
