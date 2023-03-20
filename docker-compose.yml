@@ -40,11 +40,10 @@ services:
         depends_on: 
             - "jtl-db"
 
-    mailhog:
-        image: mailhog/mailhog
+    mail:
+        image: maildev/maildev
         ports:
-            - "8081:8025"
-            - "1025:1025"
+            - "1080:1080"
 
 volumes: 
     jtl_db:
